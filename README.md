@@ -1,6 +1,6 @@
-# retrosmc by mcobit
+# retrosmc by mcobit (updated by Bousqi)
 
-Easy script to get RetroPie installed alongside OSMC
+Easy script to get RetroPie installed alongside KODI on bare raspbian lite
 
 This contains work from the RetroPie project as well as some open source libraries and binaries like SDL1.2/2 etc.
 Also this is an **alpha release** right now. So I am not responsible for anything you do with this to your system.
@@ -17,10 +17,13 @@ Disclaimer and other useful information. _Read **before** installing_!
 
 ## Installation
 
-1. SSH into your OSMC installation. The default account is `osmc` and the password is also `osmc`.
+1. Install KODI on a fresh Raspbian Lite
+  `sudo apt install kodi`
+
+2. SSH into your Kodi installation. The default account is `pi` and the password is also `raspberry`.
 * Move to the home directory
-  `cd /home/osmc` and download the installation script
-  `wget https://raw.githubusercontent.com/mcobit/retrosmc/master/install-retrosmc.sh
+  `cd /home/pi` and download the installation script
+  `wget https://raw.githubusercontent.com/bousqi/retrosmc/master/install-retrosmc.sh
 `.
 * Make the script executable `chmod +x install-retrosmc.sh`.
 * Run the script `./install-retrosmc.sh`.
@@ -33,11 +36,11 @@ When the Binaries Installation finished, choose "cancel" to return to the Retros
 
 You can exit the menu by choosing "cancel" at the bottom after every task.
 
-If you have installed the "Launcher Addon", after a restart of OSMC (Kodi), you will find your shortcut in the Program add-ons in OSMC.
+If you have installed the "Launcher Addon", after a restart of Kodi, you will find your shortcut in the Program add-ons in Kodi.
 
 ## Custom Menu Item
 
-If you want to create a custom menu item, here is a little symbol for you, that I hope, matches the OSMC skin style.
+If you want to create a custom menu item, here is a little symbol for you, that I hope, matches the Kodi skin style.
 The link should contain the following command:
 `System.Exec(/home/osmc/RetroPie/scripts/retropie.sh)`
 
@@ -49,3 +52,4 @@ Have fun!
 * OSMC (Our beloved platform this is running on - Keep up the good work!)
 * `jcnventura3` for the launcher add-on - Just works
 * Thanks to all testers
+* Thanks to mcobit for the OSMC script
