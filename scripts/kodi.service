@@ -4,8 +4,8 @@ After = remote-fs.target network-online.target
 Wants = network-online.target
 
 [Service]
-User = nico
-Group = nico
+User = kodi-user
+Group = kodi-user
 Type = simple
 ExecStart = /usr/bin/kodi-standalone
 Restart = on-abort
