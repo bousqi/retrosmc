@@ -1,0 +1,3 @@
+0.0.1 Initial RetroPie launcher plugin
+0.0.2 Add retrosmc artwork
+0.0.3 Bousqi version for Raspbian lite
